@@ -1,13 +1,16 @@
 $(function () {
 
     // Custom JS
+    // берем элементы
     var menu = document.querySelector(".navigation-wrapper");
     var dropdownbButton = document.querySelector(".dropdown-button");
+    // вешаем обработчик событий клика на кнопке вызова навигации и туглим класс для отображения навигации
     dropdownbButton.addEventListener("click", function () {
         menu.classList.toggle("navigation-wrapper-hidden");
     })
+    // берем форму
     var form = document.querySelector(".payment-info__card");
-    console.log(form.elements.cardCodeNumber);
+    // вешаем обработчик клика на каждый инпут формы, который требует валидации. в теле обработчика пвызываем функцию проверки кода введеного симфола (финкции передаем объект события и тип проверки
     form.elements.numberBlock1.addEventListener("keypress", function (e) {
         if (!checkInput(e, "number")) {
             e.preventDefault();
@@ -39,6 +42,7 @@ $(function () {
         }
     })
 
+    // функция проверка кода введенного символа
     function checkInput(ew, compare) {
         var ew = event.which;
         if (compare == "number")
