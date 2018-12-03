@@ -1,0 +1,195 @@
+.payment-info {
+  color: #8494ab;
+  font-size: rem(16px);
+}
+
+.payment-info__billing-title {
+  font-family: Arial;
+  line-height: 1.31;
+  margin-bottom: rem(23px);
+}
+
+.payment-info__card-block {
+  position: relative;
+  padding-top: rem(295px);
+}
+
+.payment-info__billing-item {
+  margin-bottom: rem(11px);
+}
+
+.payment-info__billing-value {
+  padding-left: rem(41px);
+  color: #373c43;
+}
+
+.payment-info__billing {
+  margin-bottom: rem(35px);
+}
+
+.payment-info__card-title {
+  font-family: OpenSans;
+  font-weight: bold;
+  line-height: 1.16;
+  color: #383d43;
+  font-size: rem(22px);
+  margin-bottom: rem(22px);
+}
+
+.payment-info__card-front {
+  top: 0;
+  position: absolute;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.payment-info__billing-list {
+  display: table;
+}
+
+.payment-info__billing-item {
+  display: table-row;
+}
+
+.payment-info__billing-name, .payment-info__billing-value {
+  display: table-cell;
+}
+
+.payment-info__card-number {
+  line-height: 1.31;
+  margin-bottom: rem(17px);
+}
+
+.payment-info__card-number-title {
+  margin-bottom: rem(5px);
+}
+
+.payment-info__card-number-blocks {
+  max-width: 100%;
+  display: flex;
+}
+
+.payment-info__card-number-block {
+  width: rem(65px);
+  height: rem(42px);
+  background-color: #ffffff;
+  border: rem(1px) solid #e4e9ee;
+  margin-right: rem(9px);
+  text-align: center;
+}
+
+.payment-info__validity {
+  margin-bottom: rem(12px);
+}
+
+.payment-info__validity-title {
+  margin-bottom: rem(5px);
+}
+
+.payment-info__validity-date {
+  display: flex;
+}
+
+.payment-info__validity-month {
+  width: rem(70px);
+  height: rem(42px);
+  margin-right: rem(9px);
+  background-color: #ffffff;
+}
+
+.payment-info__validity-year {
+  width: rem(86px);
+  height: rem(42px);
+  background-color: #ffffff;
+}
+
+
+.payment-info__card-holder {
+  width: 100%;
+  height: rem(42px);
+  background-color: #ffffff;
+  border: rem(1px) solid #e4e9ee;
+
+  &::placeholder {
+    color: #bec6cf;;
+  }
+
+}
+
+.payment-info__card-back {
+  z-index: 500;
+  position: absolute;
+  top: rem(25px);
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: rem(0px);
+    top: rem(26px);
+    height: rem(42px);
+    width: 100%;
+    background-color: #e4e9ee;
+    display: block;
+  }
+}
+
+.card-code__verification-code-title {
+  font-size: rem(16px);
+  line-height: 1.31;
+  margin-bottom: rem(4px);
+}
+
+.card-code__verification-code-block {
+  border: rem(1px) solid #e4e9ee !important;
+  position: relative;
+  width: rem(138px);
+  height: rem(42px);
+
+  &::after {
+    text-align: center;
+    content: '?';
+    position: absolute;
+    width: rem(23px);
+    height: rem(23px);
+    border: rem(1px) solid #e4e9ee;
+    border-radius: 50%;
+    background-color: #ffffff;
+    right: rem(10px);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.payment-info__verification-code-value {
+  border: none;
+  position: relative;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+
+}
+
+.payment-info__send-button {
+  font-family: OpenSans;
+  font-weight: bold;
+  width: rem(173px);
+  height: rem(40px);
+  border-radius: rem(3px);
+  background-color: #95bf00;
+  color: #ffffff;
+  font-size: rem(14px);
+  border: none;
+  transition: .5s;
+
+  &:hover {
+    background-color: #17a2b8;
+  }
+
+}

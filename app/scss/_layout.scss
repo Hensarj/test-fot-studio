@@ -1,20 +1,42 @@
-html,
-body {
-  height: 100%;
+@function rem($px) {
+  @return $px / 16px+0rem;
+}
+
+::placeholder {
+  color: #666;
+}
+
+::selection {
+  background-color: $accent;
+  color: #fff;
 }
 
 html {
-  @include for768px {
-    font-size: 15px;
-  }
+  height: 100%;
+}
 
-  @include for480px {
-    font-size: 14px;
-  }
+body {
+  background-color: #101114;
+  min-height: 100%;
+  vertical-align: middle;
+  //font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  //line-height: 1.65;
+  font-family: $default-font;
+  overflow-x: hidden;
+  //color: $text;
+  input, textarea {
+    border: #666 1px solid;
+    outline: none;
 
-  @include for320px {
-    font-size: 13px;
+    &:focus:required:invalid {
+      border-color: red;
+    }
 
+    &:required:valid {
+      border-color: green;
+    }
   }
 }
 
@@ -25,6 +47,8 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: rem(86px);
+  padding-bottom: rem(80px);
 }
 
 .container {
@@ -36,13 +60,72 @@ html {
   display: table;
 }
 
-.row {
+.table-row {
   display: table-row;
 }
 
-.cell {
+.table-cell {
   display: table-cell;
+  position: relative;
+  background-color: #101114;
+
+  &--bg-color-white {
+    background-color: #f7f8f8;
+  }
 }
+
+.logo {
+  &-wrapper {
+    padding-left: rem(29px);
+    background-color: #1f2229;
+    vertical-align: middle;
+    padding-right: rem(29px);
+  }
+
+}
+
+.header {
+  &-wrapper {
+    background-color: #00aeef;
+    padding: rem(52px) rem(27px) rem(33px) rem(27px);
+  }
+
+  &-container {
+    max-width: rem(431px);
+  }
+}
+
+.content {
+  &-wrapper {
+    background-color: #f7f8f8;
+    padding: rem(47px) rem(46px) rem(50px) rem(29px);
+  }
+
+  &-container {
+    max-width: rem(639px);
+  }
+}
+
+.navigation {
+  &-wrapper {
+    background-color: #101114;
+    vertical-align: top;
+
+
+  }
+
+  &-container {
+    width: rem(318px);
+  }
+}
+
+.footer {
+  &-wrapper {
+    padding: rem(26px) rem(46px) rem(33px) rem(29px);
+    background-color: #373c43;
+  }
+}
+
 
 // tag styles reset
 h1,

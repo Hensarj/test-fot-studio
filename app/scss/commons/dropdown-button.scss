@@ -1,0 +1,14 @@
+.dropdown-button {
+  height: rem(25px);
+  width: rem(25px);
+  color: red;
+  bottom: rem(5px);
+  left: 50%;
+  position: absolute;
+  background-color: red;
+  transform: translateX(-50%) !important;
+  display: none;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+}

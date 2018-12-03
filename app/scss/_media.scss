@@ -3,23 +3,87 @@
 
 /*==========  Desktop First  ==========*/
 
-// ≥1200px
+// ≥975px
 @include media-breakpoint-down(lg) {
-	
+  html {
+    font-size: 15px;
+  }
+  .navigation-container {
+    width: auto;
+  }
+  .wrapper {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
 }
 
-// ≥992px
+// ≥840px
 @include media-breakpoint-down(md) {
+  html {
+    font-size: 14px;
+  }
+  .payment-info__verification-code {
+    display: flex;
+    right: rem(15px);
+    bottom: rem(7px);
+    position: absolute;
+
+    //transform: translate(-50%, -110%);
+  }
+  .payment-info__card-back {
+    left: 0;
+    top: 19%;
+  }
+  .card-code__verification-code-title {
+    display: flex;
+    align-items: center;
+    margin-right: rem(10px);
+    margin-bottom: 0;
+  }
+  .payment-info__card-block {
+    padding-top: rem(325px);
+  }
 
 }
 
-// ≥768px
+// ≥700px
 @include media-breakpoint-down(sm) {
+  html {
+    font-size: 13px;
+  }
+  .navigation-wrapper {
+    position: absolute;
+    z-index: 1000500;
+    left: 0;
+    right: 0;
+    transition: .5s;
 
+    &-hidden {
+      transform: translatex(rem(-1000px));
+    }
+  }
+  .logo-wrapper {
+    position: absolute;
+
+  }
+  .empty-cell {
+    position: absolute;
+
+  }
+
+  .dropdown-button {
+    display: block;
+  }
 }
 
 // ≥576px
 @include media-breakpoint-down(xs) {
+  html {
+    font-size: 12px;
+  }
+  .card {
+    width: rem(365px);
+  }
 
 }
 
@@ -43,5 +107,5 @@
 
 // ≤1200px
 @include media-breakpoint-up(xl) {
-	
+
 }

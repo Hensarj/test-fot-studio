@@ -1,0 +1,20 @@
+.header {
+  color: #000000;
+}
+
+.header__title {
+  margin-bottom: rem(12px);
+  font-size: rem(35px);
+  line-height: 0.63;
+  font-family: OpenSans;
+  font-weight: bold;
+
+}
+
+.header__text {
+  font-family: Arial;
+  font-size: rem(14px);
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: justify;
+}

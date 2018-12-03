@@ -2,129 +2,201 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>CHULAKOV</title>
-  <link rel="stylesheet" href="../../Desktop/CHULAKOV.RU%202/css/main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>CHULAKOV</title>
+    <link rel="stylesheet" href="css/main.min.css">
 </head>
 
 <body>
-  <div class="wrapper">
+<div class="wrapper">
     <div class="container">
-      <div class="table">
-        <header class="header row">
-          <div class="header__logo logo cell">
-            <img src="../../Desktop/CHULAKOV.RU%202/img/content/logo.png" class="logo__img">
-          </div>
-          <div class="header__slogan cell">
-            <h1 class="header__title">
-              Заголовок страницы
-            </h1>
-            <div class="header__text">В отличие от пылевого и ионного хвостов, направление поступает
-              в лимногляциальный часовой угол
+        <div class="table">
+            <div class="table-row">
+                <div class="table-cell logo-wrapper">
+                    <div class="logo-container">
+                        <div class="logo">
+                            <a href="#" class="logo__link">
+                                <img src="img/logo.png" class="logo__img">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-cell header-wrapper">
+                    <div class="header-container">
+                        <header class="header">
+                            <h1 class="header__title">
+                                Заголовок страницы
+                            </h1>
+                            <div class="header__text">В отличие от пылевого и ионного хвостов, направление поступает
+                                в лимногляциальный часовой угол
+                            </div>
+                            <div class="dropdown-button">
+                                N
+                            </div>
+                        </header>
+                    </div>
+                </div>
             </div>
-          </div>
-        </header>
-        <div class="row">
-          <nav class="navgation cell">
-            <ul class="navigation__list">
-              <li class="navigation__item">Первая ссылка</li>
-              <li class="navigation__item navigation__item--active">Вторая ссылка</li>
-              <li class="navigation__item">Третья ссылка</li>
-              <li class="navigation__item">Личный кабинет</li>
-              <li class="navigation__item">Выйти</li>
-            </ul>
-          </nav>
-          <div class="cell">
-            <main class="content">
-              <div class="payment-info">
-                <h2 class="payment-info__title">Информация по оплате:</h2>
-                <div class="payment-info__credentials">
-                  <div class="payment-info__item row">
-                    <div class="payment-info__name cell">Номер счета:</div>
-                    <div class="payment-info__value cell">87123658716587</div>
-                  </div>
-                  <div class="payment-info__item row">
-                    <div class="payment-info__name cell">Сумма платежа:</div>
-                    <div class="payment-info__value cell">100 руб.</div>
-                  </div>
-                </div>
-              </div>
-              <form class="payment-card">
-                <h2 class="payment-card__title">Данные банковской карты</h2>
-                <div class="payment-card__front">
-                  <div class="payment-card__number card-number">
-                    <div class="card-number__title">Номер карты</div>
-                    <div class="card-number__blocks">
-                      <input type="number" name="block1" class="card-number__block">
-                      <input type="number" name="block2" class="card-number__block">
-                      <input type="number" name="block3" class="card-number__block">
-                      <input type="number" name="block4" class="card-number__block">
+            <div class="table-row">
+                <div class="table-cell navigation-wrapper navigation-wrapper-hidden">
+                    <div class="navigation-container">
+                        <nav class="navigation">
+                            <ul class="navigation__list">
+                                <li class="navigation__item"><a class="navigation__link" href="#">Первая ссылка</a></li>
+                                <li class="navigation__item"><a class="navigation__link navigation__link--active"
+                                                                href="#">Вторая ссылка</a></li>
+                                <li class="navigation__item"><a class="navigation__link" href="#">Третья ссылка</a></li>
+                                <li class="navigation__item"><a class="navigation__link" id="account" href="#">Личный
+                                    кабинет</a>
+                                </li>
+                                <li class="navigation__item"><a class="navigation__link" id="exit" href="#">Выйти</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
-                  </div>
-                  <div class="payment-card__validity card-validity">
-                    <div class="card-validity__title">Срок действия</div>
-                    <div class="card-validity__date">
-                      <select class="card-validity__month">
-                        <option selected value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                      </select>
-                      <select class="card-validity__year">
-                        <option value="2">2018</option>
-                        <option value="3">2019</option>
-                        <option value="4">2020</option>
-                        <option value="5">2021</option>
-                        <option value="6">2022</option>
-                        <option value="7">2023</option>
-                        <option value="8">2024</option>
-                        <option value="9">2025</option>
-                      </select>
-                    </div>
-                  </div>
-                  <input type="text" class="payment-card__card-holder">
                 </div>
-                <div class="payment-card__back">
-                  <div class="payment-card__code card-code">
-                    <div class="card-code__title">
-                      Код CVV2 / CVC2
+                <div class="table-cell table-cell--bg-color-white">
+                    <div class="content-wrapper">
+                        <div class="content-container">
+                            <main class="content">
+                                <div class="payment-info">
+                                    <div class="payment-info__billing">
+                                        <h2 class="payment-info__billing-title">Информация по оплате:</h2>
+                                        <ul class="payment-info__billing-list">
+                                            <li class="payment-info__billing-item">
+                                                <div class="payment-info__billing-name">Номер счета:</div>
+                                                <div class="payment-info__billing-value" id="account-number">
+                                                    87123658716587
+                                                </div>
+                                            </li>
+                                            <li class="payment-info__billing-item table-row">
+                                                <div class="payment-info__billing-name">Сумма платежа:</div>
+                                                <div class="payment-info__billing-value" id="payment-value">
+                                                    100
+                                                    руб.
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <form class="payment-info__card">
+                                        <h2 class="payment-info__card-title">Данные банковской карты</h2>
+                                        <div class="payment-info__card-block">
+                                            <div class="payment-info__card-front card">
+                                                <div class="payment-info__card-number">
+                                                    <div class="payment-info__card-number-title">Номер карты</div>
+                                                    <div class="payment-info__card-number-blocks">
+                                                        <input type="text" name="number-block-1"
+                                                               class="payment-info__card-number-block input-block"
+                                                               required maxlength="4" minlength="4">
+                                                        <input type="text" name="number-block-2"
+                                                               class="payment-info__card-number-block input-block"
+                                                               required maxlength="4" minlength="4">
+                                                        <input type="text" name="number-block-3"
+                                                               class="payment-info__card-number-block input-block"
+                                                               required maxlength="4" minlength="4">
+                                                        <input type="text" name="number-block-4"
+                                                               class="payment-info__card-number-block input-block"
+                                                               required maxlength="4" minlength="4">
+                                                    </div>
+                                                </div>
+                                                <div class="payment-info__validity">
+                                                    <div class="payment-info__validity-title">Срок действия</div>
+                                                    <div class="payment-info__validity-date">
+                                                        <select class="payment-info__validity-month">
+                                                            <option selected value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                            <option value="6">6</option>
+                                                            <option value="7">7</option>
+                                                            <option value="8">8</option>
+                                                            <option value="9">9</option>
+                                                            <option value="10">10</option>
+                                                            <option value="11">11</option>
+                                                            <option value="12">12</option>
+                                                        </select>
+                                                        <select class="payment-info__validity-year">
+                                                            <option value="2">2018</option>
+                                                            <option value="3">2019</option>
+                                                            <option value="4">2020</option>
+                                                            <option value="5">2021</option>
+                                                            <option value="6">2022</option>
+                                                            <option value="7">2023</option>
+                                                            <option value="8">2024</option>
+                                                            <option value="9">2025</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <input type="text" class="payment-info__card-holder input-block"
+                                                       required minlength="4" placeholder="Держатель карты" lang="en">
+                                            </div>
+                                            <div class="payment-info__card-back card">
+                                                <div class="payment-info__verification-code">
+                                                    <div class="card-code__verification-code-title">
+                                                        Код CVV2 / CVC2
+                                                    </div>
+                                                    <div class="card-code__verification-code-block">
+                                                        <input type="text" name="verification-code-value"
+                                                               class="payment-info__verification-code-value input-block"
+                                                               required maxlength="3" minlength="3">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <input type="submit" class="payment-info__send-button input-block" required
+                                               value="Оплатить">
+                                    </form>
+                                </div>
+                            </main>
+                        </div>
                     </div>
-                  </div>
                 </div>
-                <input type="submit">
-              </form>
-              <footer class="footer">
-                <p class="footer__text">Исходя из астатической системы координат Булгакова, соединение стабильно.
-                  Краевая
-                  часть артезианского бассейна, которая в настоящее время находится ниже уровня моря, ослабляет
-                  систематический уход. Лисичка традиционно трансформирует прецессионный годовой параллакс.</p>
-                <p class="footer__text">Выклинивание абсолютно аккумулирует твердый pадиотелескоп Максвелла.</p>
-                <p class="footer__text">Алмаз слагает горст. Делювий длительно колеблет лазерный подвижный объект.</p>
-                <p class="footer__text">Устойчивость, например, параллельна. Аргумент перигелия определяет боксит.
-                  Проекция
-                  вертикально дает уходящий диабаз. Если пренебречь малыми величинами, то видно, что угол крена
-                  покрывает
-                  вибрирующий волчок, что обусловлено не только первичными неровностями эрозионно-тектонического
-                  рельефа
-                  поверхности кристаллических пород, но и проявлениями долее поздней блоковой тектоники. Засветка неба
-                  заставляет иначе взглянуть на то, что такое волчок.</p>
-              </footer>
-            </main>
-          </div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell empty-cell"></div>
+                <div class="table-cell">
+                    <div class="footer-wrapper">
+                        <div class="footer-container">
+                            <footer class="footer">
+                                <p class="footer__text">Исходя из астатической системы координат Булгакова, соединение
+                                    стабильно.
+                                    Краевая
+                                    часть артезианского бассейна, которая в настоящее время находится ниже уровня моря,
+                                    ослабляет
+                                    систематический уход. Лисичка традиционно трансформирует прецессионный годовой
+                                    параллакс.</p>
+                                <p class="footer__text">Выклинивание абсолютно аккумулирует твердый pадиотелескоп
+                                    Максвелла.</p>
+                                <p class="footer__text">Алмаз слагает горст. Делювий длительно колеблет лазерный
+                                    подвижный
+                                    объект.</p>
+                                <p class="footer__text">Устойчивость, например, параллельна. Аргумент перигелия
+                                    определяет
+                                    боксит.
+                                    Проекция
+                                    вертикально дает уходящий диабаз. Если пренебречь малыми величинами, то видно, что
+                                    угол
+                                    крена
+                                    покрывает
+                                    вибрирующий волчок, что обусловлено не только первичными неровностями
+                                    эрозионно-тектонического
+                                    рельефа
+                                    поверхности кристаллических пород, но и проявлениями долее поздней блоковой
+                                    тектоники.
+                                    Засветка неба
+                                    заставляет иначе взглянуть на то, что такое волчок.</p>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
+</div>
 </body>
-<script src="../../Desktop/CHULAKOV.RU%202/js/script.js"></script>
+<script src="js/scripts.min.js"></script>
 
 </html>

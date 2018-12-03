@@ -1,53 +1,15 @@
 @import "vars";
 @import "fonts";
 @import "libs";
-
-::placeholder {
-	color: #666;
-}
-
-::selection {
-	background-color: $accent;
-	color: #fff;
-}
-
-body {
-	font-size: 16px;
-	min-width: 320px;
-	position: relative;
-	line-height: 1.65;
-	font-family: $default-font;
-	overflow-x: hidden;
-	color: $text;
-	input, textarea {
-		border: #666 1px solid;
-		outline: none;
-		&:focus:required:invalid {
-			border-color: red;
-		}
-		&:required:valid {
-			border-color: green;
-		}
-	}
-}
-
-.img-responsive {
-	display: block;
-	max-width: 100%;
-	height: auto;
-	&.img-width {
-		width: 100%;
-	}
-}
-
-.text-center {
-	text-align: center;
-}
-
-b, strong {
-	font-weight: bold;
-}
-
-
-
+@import "layout";
+//blocks
+@import "blocks/header.scss";
+@import "blocks/navigation.scss";
+@import "blocks/payment-info";
+@import "blocks/footer.scss";
+//commons
+@import "commons/logo.scss";
+@import "commons/card.scss";
+@import "commons/input-block.scss";
+@import "commons/dropdown-button.scss";
 @import "media"; // Always at the end

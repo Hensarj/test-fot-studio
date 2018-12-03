@@ -1,0 +1,12 @@
+.input-block {
+  padding-left: rem(10px);
+  padding-right: rem(10px);
+
+  &:active {
+    border: 1px solid #17a2b8;
+  }
+
+  &:focus {
+    border: 1px solid #17a2b8;
+  }
+}
